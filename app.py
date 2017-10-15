@@ -1,11 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from bottle import route, run, get, HTTPResponse, static_file
+from bottle import route, get, HTTPResponse, static_file, run
 import json
+import os
+import sys
 
 # ルーティングはvue.jsに任せる
-@route('/')
-@route('/<aid:int>')
+@route("/")
+@route("/<aid:int>")
 def index(aid=0):
     return static_file('/html/index.html', root='./')
 
@@ -36,6 +38,6 @@ def getsrticle(aid):
     r = HTTPResponse(status=200, body=body)
     r.set_header('Content-Type', 'application/json')
     return r
-    
 
-run(host='0.0.0.0', port=8000, debug=True)
+if __name__ == "__main__":
+    run(host='0.0.0.0', port=8000)        

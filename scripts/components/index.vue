@@ -12,8 +12,11 @@
 <style scoped>
 .container{
 		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
 		display: flex;
-		flex-wrap: wrap
+		flex-wrap: wrap;
 }
 .box{
 		width: 32vw;

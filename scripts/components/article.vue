@@ -13,6 +13,9 @@
 <style scoped>
 .container{
 		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
 }
 .box{
 }

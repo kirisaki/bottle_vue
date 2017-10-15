@@ -1,7 +1,6 @@
 vue-bottle
 ====
 
-Overview
 sample for communication between bottle and vue.js with RESTful API.
 
 ## Demo
